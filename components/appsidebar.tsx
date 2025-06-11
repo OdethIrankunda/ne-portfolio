@@ -55,7 +55,7 @@ const items = [
   },
   {
     title: "Blog",
-    url: "/blog",
+    url: "#blog",
     icon: Wifi,
   },
   {
@@ -143,7 +143,7 @@ export default function AppSidebar() {
 
         <SidebarFooter>
           <Button
-            className="dark:hidden"
+            className="dark:hidden border-none"
             variant="outline"
             onClick={() => setTheme("dark")}
             size="icon"
@@ -153,7 +153,7 @@ export default function AppSidebar() {
             <span className="sr-only">Toggle theme</span>
           </Button>
           <Button
-            className="hidden dark:flex items-center justify-center"
+            className="hidden dark:flex items-center justify-center border-none"
             variant="outline"
             onClick={() => setTheme("light")}
             size="icon"
